@@ -1,8 +1,6 @@
-﻿using System.Collections;//programa que permita visualizar los departamentos de nicaragua con
+using System.Collections;//programa que permita visualizar los departamentos de nicaragua con
 //su cantidad poblacional.
 //Encuentre: Mayor, menor, sumas y ordene los datos
-
-
 
 Dictionary<string, int> dep = new()
 {
@@ -26,6 +24,7 @@ Dictionary<string, int> dep = new()
 };
 
 var orderDepResult = dep.OrderBy(d => d.Value);
+//Encontrar el menor
 var menDep = dep.Select(d => d).Where(d => d.Value == dep.Values.ToArray().Min());
 Console.WriteLine("Departamento con menor Población:");
 
