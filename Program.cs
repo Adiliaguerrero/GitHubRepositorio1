@@ -33,6 +33,7 @@ foreach (var order in menDep)
     Console.WriteLine($"{order.Key,20} ==> {order.Value,10:N0}");
 //Encontrar el departamento con mayor población
 Console.WriteLine("Departamento con mayor Población:");
+//Sumar todas las poblaciones con LINQ
 foreach (var item in orderDepResult)
     Console.WriteLine($"{item.Key,20} ==> {item.Value,10:N0}");
 int total = orderDepResult.ToDictionary(kvp => kvp.Key, kvp => kvp.Value).Values.ToArray().Sum();
