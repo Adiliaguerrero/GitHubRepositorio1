@@ -37,6 +37,7 @@ foreach (var item in orderDepResult)
     Console.WriteLine($"{item.Key,20} ==> {item.Value,10:N0}");
 int total = orderDepResult.ToDictionary(kvp => kvp.Key, kvp => kvp.Value).Values.ToArray().Sum();
 
+//mostrar los tres departamentos con mayor población
 Console.WriteLine($"Población General:{total,17:N0}");
 
 var tresMayores = orderDepResult.TakeLast(3);
