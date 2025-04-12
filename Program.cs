@@ -23,6 +23,7 @@ Dictionary<string, int> dep = new()
     {"Rivas",182645}
 };
 
+//Ordenando con diccionario y Orderby de LINQ
 var orderDepResult = dep.OrderBy(d => d.Value);
 //Encontrar el menor
 var menDep = dep.Select(d => d).Where(d => d.Value == dep.Values.ToArray().Min());
