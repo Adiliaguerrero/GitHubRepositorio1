@@ -18,7 +18,7 @@ Console.WriteLine($"datos Desordenados");
 foreach (var item in diccionario)
 Console.WriteLine ($"{item.Key,-20} ==> {item.Value,10:N0}");
 //Ordenarndocon LINQ OrdeBy el diccionario
- //Suma de toda la población y nombre de mayor y menor 
-Console.WriteLine ($" Población General:{Poblacion. Sum():N0}");
+ //Sumar todas las poblacione con SUM de LINQ 
+Console.WriteLine ($" Población General:{diccionario.Values.Sum():N0}");
 Console.WriteLine ($"Departamento con mayor Población:{maxDepkey}");
 Console.WriteLine ($"Departamento con menor Población:{minDepkey}");
