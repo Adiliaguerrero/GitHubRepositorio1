@@ -13,9 +13,11 @@ string maxDepkey= ordenado. Last ().Key;
  //reasignación de los arreglos en paralelo 
 Departamento = ordenado.Keys.ToArray ();
 Poblacion = ordenado.Values.ToArray ();
-//Mostrar los arreglos ordenados de menor a mayor.
-for (var i= 0; i< Poblacion. Length; i++)
-Console.WriteLine ($"{Departamento [i],20} ==> {Poblacion [i],10:N0}");
+//Mostrar el diccionario sin ordenar
+Console.WriteLine($"datos Desordenados");
+foreach (var item in diccionario)
+Console.WriteLine ($"{item.Key,-20} ==> {item.Value,10:N0}");
+//Ordenarndocon LINQ OrdeBy el diccionario
  //Suma de toda la población y nombre de mayor y menor 
 Console.WriteLine ($" Población General:{Poblacion. Sum():N0}");
 Console.WriteLine ($"Departamento con mayor Población:{maxDepkey}");
